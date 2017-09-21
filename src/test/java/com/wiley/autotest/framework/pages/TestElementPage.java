@@ -42,6 +42,12 @@ public class TestElementPage extends AbstractPage {
         return this;
     }
 
+    public TestElementPage checkElementReturnWithContext() {
+        element(By.id("test")).elements(By.className("contextTest"))
+                .forEach(element -> element.should().haveText("Hello context"));
+        return this;
+    }
+
     public TestElementPage checkElementNotFound() {
         element(By.id("elementNonexistent")).should().beDisplayed();
         return this;

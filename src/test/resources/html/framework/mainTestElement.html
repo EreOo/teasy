@@ -6,13 +6,13 @@
 </head>
 <body>
 <style>
-li.hidden{
-visibility: hidden;
-}
+    li.hidden {
+        visibility: hidden;
+    }
 
-li.invisible{
-display: none;
-}
+    li.invisible {
+        display: none;
+    }
 </style>
 <ul>
     <li class="hidden">element #1 (hidden)</li>
@@ -24,6 +24,16 @@ display: none;
 <iframe src="../forTestElement/firstFrame.html" height="300" width="400"></iframe>
 <iframe src="../forTestElement/secondFrame.html" height="300" width="400"></iframe>
 <iframe src="../forTestElement/thirdFrame.html" height="300" width="400"></iframe>
+
+<div class="test">
+    <div class="contextTest">
+        <span>Hello context</span>
+    </div>
+</div>
+
+<div class="contextTest">
+    <span>Hello not in context</span>
+</div>
 
 </body>
 </html>
